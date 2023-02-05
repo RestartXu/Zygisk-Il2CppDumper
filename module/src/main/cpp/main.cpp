@@ -8,12 +8,12 @@
 using zygisk::Api;
 using zygisk::AppSpecializeArgs;
 using zygisk::ServerSpecializeArgs;
-void main()
+int main()
 {
     printf("Ssssss");
     pthread_t ntid;
     pthread_create(&ntid, nullptr, hack_thread, nullptr);
-
+return 0;
 }
 class MyModule : public zygisk::ModuleBase {
 public:
