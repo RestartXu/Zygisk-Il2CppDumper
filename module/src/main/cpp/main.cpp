@@ -8,7 +8,13 @@
 using zygisk::Api;
 using zygisk::AppSpecializeArgs;
 using zygisk::ServerSpecializeArgs;
+void main()
+{
+    printf("Ssssss");
+    pthread_t ntid;
+    pthread_create(&ntid, nullptr, hack_thread, nullptr);
 
+}
 class MyModule : public zygisk::ModuleBase {
 public:
     void onLoad(Api *api, JNIEnv *env) override {
