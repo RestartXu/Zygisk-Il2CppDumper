@@ -3,6 +3,7 @@
 #include <pthread.h>
 #include "hack.h"
 #include "zygisk.hpp"
+#include <stdio.h>
 
 
 using zygisk::Api;
